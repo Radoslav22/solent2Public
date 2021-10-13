@@ -23,6 +23,7 @@ public class SpringBootWebSecurityConfiguration extends WebSecurityConfigurerAda
                 .authorizeRequests()
                 .antMatchers("/",
                         "/home",
+<<<<<<< HEAD
                         "/resources/**",
                         "/swagger-ui/**",
                         "/registration"
@@ -33,13 +34,32 @@ public class SpringBootWebSecurityConfiguration extends WebSecurityConfigurerAda
                         "/about"
                 ).hasRole("USER")  // ROLE_USER 
                 .antMatchers("/users").hasRole("GLOBAL_ADMIN") // ROLE_GLOBAL_ADMIN
+=======
+                        "/contact",
+                        "/about",
+                        "/index.html",
+                        "/resources/**",
+                        "/images/**",
+                        "/swagger-ui/**",
+                        "/registration",
+                        "/rest/openapi.json"
+                ).permitAll()
+                .antMatchers("/mvc/**"
+                ).hasRole("USER") // ROLE_USER 
+                .antMatchers("/users").hasRole("GLOBAL_ADMIN") // ROLE_GLOBAL_ADMIN
+                .antMatchers("/rest/**").hasAnyRole("REST_USER","GLOBAL_ADMIN") // ROLE_GLOBAL_ADMIN
+>>>>>>> upstream/master
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login")
                 .usernameParameter("username")
                 .passwordParameter("password")
+<<<<<<< HEAD
                 .successForwardUrl("/home")
+=======
+                .defaultSuccessUrl("/home", true)
+>>>>>>> upstream/master
                 .permitAll()
                 .and()
                 .logout()

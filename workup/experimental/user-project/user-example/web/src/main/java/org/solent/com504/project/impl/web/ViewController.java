@@ -56,6 +56,7 @@ public class ViewController {
         return "testHeartbeat";
     }
     
+<<<<<<< HEAD
     
 
 //    @RequestMapping("/farmhome")
@@ -168,5 +169,7 @@ public class ViewController {
 //        // render view with jsp
 //        return "reviewAnimal";//will redirect to farmhome request mapping    
 //    }
+=======
+>>>>>>> upstream/master
 
 }

@@ -42,7 +42,12 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+<<<<<<< HEAD
             <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
+=======
+            <h4 class="text-center"><a href="${contextPath}/registration">Create a new account</a></h4>
+            <h4 class="text-center"><a href="${contextPath}/home">Return to home page</a></h4>
+>>>>>>> upstream/master
         </div>
 
     </form>

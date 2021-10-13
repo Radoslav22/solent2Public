@@ -7,6 +7,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import org.solent.com504.project.model.party.dto.Party;
+<<<<<<< HEAD
+=======
+import org.solent.com504.project.model.user.dto.User;
+>>>>>>> upstream/master
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -29,6 +33,13 @@ public class ReplyMessage {
     @XmlElementWrapper(name = "partylist")
     @XmlElement(name = "party")
     private List<Party> partyList = null;
+<<<<<<< HEAD
+=======
+    
+    @XmlElementWrapper(name = "userlist")
+    @XmlElement(name = "user")
+    private List<User> userList = null;
+>>>>>>> upstream/master
 
 
     public Integer getCode() {
@@ -63,6 +74,19 @@ public class ReplyMessage {
         this.partyList = partyList;
     }
 
+<<<<<<< HEAD
+=======
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
+    }
+    
+    
+
+>>>>>>> upstream/master
 
     public Long getTotalRecords() {
         return totalRecords;
