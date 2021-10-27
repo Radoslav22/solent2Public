@@ -137,5 +137,13 @@ public Invoice purchaseItems(ShoppingCart shoppingCart);
 
 You are making progress in your understanding of java web technologies. 
 
+<<<<<<< HEAD
 You can now go on and try the  [shoppingcart-bootstrap](../session4/shoppingcart-bootstap) exercise
+=======
+<<<<<<< HEAD:myPracticeCourseWork/session4/shoppingcart/webApplicationExercise2/README.md
+You can now go on and try the  [shoppingcart-bootstrap](../session4/shoppingcart-bootstap) exercise
+=======
+You can now go on and try the  [shoppingcart-bootstrap](../../shoppingcart-bootstrap) exercise
+>>>>>>> upstream/master:session4/shoppingcart/webApplicationExercise2/README.md
+>>>>>>> upstream/master
 
